@@ -2,7 +2,6 @@
 
 body {
     margin: 0;
-    overflow: hidden;
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
@@ -81,4 +80,38 @@ header ul {
     height: 300px;
     width: 50%;
     object-fit: cover;
+}
+
+#content {
+    padding: 48px 0;
+    text-align: center;
+}
+
+#content h1 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1F2937;
+    margin: 0px;
+}
+
+#content .row {
+    justify-content: center;
+    gap: 64px;
+    margin: 48px 0;
+}
+
+#content .illust-container {
+    max-width: 160px;
+}
+
+#content .illust-container img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 4px solid #3882F6;
+    border-radius: 16px;
+}
+
+#content .illust-container p {
+    margin: 1em 0.5em;
 }
