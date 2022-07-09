@@ -167,3 +167,14 @@ header ul {
     border: 2px solid white;
     border-radius: 8px;
 }
+
+footer {
+    background-color: #1F2937;
+    color: #F9FAF8;
+    padding: 24px;
+}
+
+footer .row {
+    justify-content: center;
+    align-items: center;
+}
