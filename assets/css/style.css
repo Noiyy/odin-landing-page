@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
 
 body {
     margin: 0;
@@ -40,6 +41,12 @@ button {
     font-weight: bold;
     border: none;
     cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    color: #3882F6;
+    background-color: #F9FAF8;
 }
 
 header, #hero, footer {
@@ -47,14 +54,31 @@ header, #hero, footer {
 }
 
 header {
-    padding: 24px;
-    padding-bottom: 0px;
+    padding: 16px;
+}
+
+header a {
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+
+header a:hover {
+    color: #3882F6;
+}
+
+header a.active {
+    text-decoration: overline;
+}
+
+header a.active:hover {
+    color: #E5E7EB;
 }
 
 header h2 {
     color: #F9FAF8;
-    font-size: 24px;
+    font-size: 40px;
     margin: 0;
+    font-family: 'Beau Rivage', cursive;
 }
 
 header ul {
@@ -64,6 +88,9 @@ header ul {
 
 #hero {
     padding: 128px 0;
+    background-image: url("../images/bg.jpg");
+    background-size: cover;
+    background-blend-mode: soft-light;
 }
 
 #hero h1 {
@@ -81,6 +108,8 @@ header ul {
     height: 300px;
     width: 50%;
     object-fit: cover;
+    -webkit-box-shadow: 0px 10px 28px 5px rgba(0,0,0,0.7); 
+    box-shadow: 0px 10px 28px 5px rgba(0,0,0,0.7);
 }
 
 #content {
@@ -177,4 +206,15 @@ footer {
 footer .row {
     justify-content: center;
     align-items: center;
+}
+
+footer a {
+    text-decoration: underline;
+    text-decoration-color: #3882F6;
+    transition: 0.2s;
+}
+
+footer a:hover {
+    color: #3882F6;
+    text-decoration: none;
 }
